@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pink">#FFBCBC</color>
+    <color name="semi_pink">#4DFFBCBC</color>
+    <color name="red">#FF7878</color>
+    <color name="sei_red">#4DFF7878</color>
+    <color name="blue">#50BCDF</color>
+    <color name="semi_blue">#4D50BCDF</color>
 </resources>

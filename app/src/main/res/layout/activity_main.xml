@@ -4,15 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".login.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/loginLogo"
+        android:text="@string/loginLogo"
+        android:textSize="50sp"
+        android:fontFamily="@font/suit_bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/loginInput"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/loginLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginTop="54dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_idLogo"
+            android:text="@string/ed_idLogo"
+            android:textSize="12sp"
+            android:fontFamily="@font/suit_bold"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_id"
+            android:hint="@string/plz_id"
+            android:fontFamily="@font/suit_semibold"
+            android:textSize="12sp"
+            android:background="@drawable/input_field"
+            android:padding="16dp"
+            android:layout_marginBottom="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_pwLogo"
+            android:text="@string/ed_pwLogo"
+            android:textSize="12sp"
+            android:fontFamily="@font/suit_bold"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_pw"
+            android:hint="@string/plz_pw"
+            android:fontFamily="@font/suit_semibold"
+            android:textSize="12sp"
+            android:background="@drawable/input_field"
+            android:padding="16dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:layout_marginHorizontal="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:text="@string/loginLogo"
+        android:textSize="29sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/suit_medium"
+        android:background="@drawable/btn_login"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
