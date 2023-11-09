@@ -4,6 +4,10 @@ plugins {
 }
 
 android {
+
+    buildFeatures{
+        viewBinding = true
+    }
     namespace = "com.example.todo_with_date"
     compileSdk = 34
 

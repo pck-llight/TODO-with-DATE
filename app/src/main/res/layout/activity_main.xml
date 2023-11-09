@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ed_id"
-            android:hint="@string/plz_id"
+            android:hint="@string/hint_id"
             android:fontFamily="@font/suit_semibold"
             android:textSize="12sp"
             android:background="@drawable/input_field"
@@ -64,13 +64,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ed_pw"
-            android:hint="@string/plz_pw"
+            android:hint="@string/hint_pw"
             android:fontFamily="@font/suit_semibold"
             android:textSize="12sp"
             android:background="@drawable/input_field"
             android:padding="16dp"
             />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/btn_signUp"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:fontFamily="@font/suit_semibold"
+        app:layout_constraintTop_toBottomOf="@id/loginInput"
+        app:layout_constraintEnd_toEndOf="@id/loginInput"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
