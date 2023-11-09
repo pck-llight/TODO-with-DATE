@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.MainActivity">
+    tools:context=".login.SignUp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginLogo"
-        android:text="@string/loginLogo"
+        android:id="@+id/signlogo"
+        android:text="@string/signUpLogo"
         android:textSize="50sp"
         android:fontFamily="@font/suit_bold"
         android:textColor="@color/black"
@@ -22,9 +22,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/loginInput"
+        android:id="@+id/signUpInput"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/loginLogo"
+        app:layout_constraintTop_toBottomOf="@id/signlogo"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="44dp"
         android:layout_marginTop="54dp"
@@ -69,30 +69,75 @@
             android:textSize="12sp"
             android:background="@drawable/input_field"
             android:padding="16dp"
+            android:layout_marginBottom="26dp"
             />
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_nickLogo"
+            android:text="@string/nickLogo"
+            android:textSize="12sp"
+            android:fontFamily="@font/suit_bold"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_nick"
+            android:hint="@string/hint_nick"
+            android:fontFamily="@font/suit_semibold"
+            android:textSize="12sp"
+            android:background="@drawable/input_field"
+            android:padding="16dp"
+            android:layout_marginBottom="26dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_resolutionLogo"
+            android:text="각오(변경가능)"
+            android:textSize="12sp"
+            android:fontFamily="@font/suit_bold"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_resolution"
+            android:hint="@string/hint_resolution"
+            android:fontFamily="@font/suit_semibold"
+            android:textSize="12sp"
+            android:background="@drawable/input_field"
+            android:padding="16dp"
+            android:layout_marginBottom="26dp"
+            />
+
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@id/btn_signUp"
-        android:text="회원가입"
+        android:text="@string/signUpLogo2"
         android:textColor="@color/black"
+        android:id="@+id/btn_signUp"
+        android:textSize="28sp"
         android:fontFamily="@font/suit_semibold"
-        app:layout_constraintTop_toBottomOf="@id/loginInput"
-        app:layout_constraintEnd_toEndOf="@id/loginInput"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="111dp"
+        android:layout_marginStart="55dp"
+        />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_btn"
-        android:layout_marginHorizontal="44dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/btn_arrow"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="558dp"
+        app:layout_constraintEnd_toEndOf="@id/signUpInput"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="50dp"
-        android:text="@string/loginLogo"
-        android:textSize="29sp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/suit_medium"
-        android:background="@drawable/btn_login"/>
-
+        android:layout_marginBottom="91dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

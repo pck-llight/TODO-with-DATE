@@ -4,8 +4,12 @@ plugins {
 }
 
 android {
+
+    buildFeatures{
+        viewBinding = true
+    }
     namespace = "com.example.todo_with_date"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.todo_with_date"
@@ -36,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.activity:activity:1.8.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
